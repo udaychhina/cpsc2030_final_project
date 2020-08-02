@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	background-color: rgb(225, 225, 225);
+	font-family: "Lato", serif;
+	color: rgb(90, 90, 90);
+	height: 100%;
+}
+
+#wrapper {
+	padding: 10px;
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: auto auto 1fr auto;
+}
+
+header {
+	text-align: center;
+}
+
+
+nav {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	color: black;
+	font-size: 80%;
+	text-align: center;
+}
+
+nav ul {
+	list-style-type: none;
+	
+}
+
+nav li {
+	margin: 5px;
+	padding: 10px;
+	background-color: rgb(240, 240, 240);
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+}
+
+hr {
+	color: rgb(240, 240, 240);
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 3px;
+}
+
+a {
+	text-decoration: none;
+	color: black; 
+}
+
+/* HEADINGS */
+
+h1, h2, h3 {
+	font-family: "Amatic SC", sans-serif;
+}
+
+h2 {
+	color: black;
+	font-size: 2.5rem;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+h3 {
+	text-align: center;
+	font-size: 150%;
+	color: black;
+}
+
+/* TIMELINE CARDS */
+
+.timeline-cards {
+	display: grid;
+}
+
+.timeline-cards hr {
+	color: rgb(219, 219, 219);
+	height: 1px;
+	margin: 5px;
+}
+
+.timeline-card {
+	margin: 5px;
+	padding: 20px; 
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+}
+
+.timeline-author {
+	font-weight: lighter;
+	font-size: 0.9rem;
+	display: block;
+	text-align: center;
+}
+
+.timeline-user {
+	font-weight: bold;
+
+}
+
+/* ADD NEW BOOK FORM */
+
+.new-book-form {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: repeat(8, 1fr);
+	border: 1px rgb(200, 200, 200) solid;
+	border-radius: 5px;
+	padding: 10px;
+	align-items: center;
+	background-color: rgb(235, 235, 235);
+}
+
+button {
+	grid-column: 1 / end;
+	margin: 5px;
+	padding: 10px;
+	background-color: rgb(240, 240, 240);
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+}
+
+label {
+	text-align-last: center;
+}
+
+.new-book-form input,
+.new-book-form select {
+	grid-column: 2 / end;
+	padding: 5px;
+}
+
+/* MY BOOKS FORM */
+
+.my-books-form {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	align-items: center;
+	border: 1px rgb(200, 200, 200) solid;
+	border-radius: 5px;
+	padding: 10px;
+	align-items: center;
+	background-color: rgb(235, 235, 235);
+}
+
+.my-books-form input {
+	justify-self: stretch;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 5px; 
+}
+
+.result-format-buttons {
+	text-align: center;
+}
+
+.result-format-buttons button {
+	width: 70px;
+}
+
+/* MY BOOK RESULTS CARDS */
+
+.cards.shown {
+	display: grid;
+	grid-gap: 10px;
+}
+
+.cards.shown hr {
+	color: rgb(219, 219, 219);
+	height: 1px;
+	margin: 5px;
+}
+
+.book-card {
+	background-color: #fff;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 20px;
+}
+
+.author {
+	font-weight: lighter;
+	text-align: center;
+	display: block;
+	font-style: 0.9rem;
+}
+
+.cards.shown span {
+	display: block;
+}
+
+
+/* MY BOOK RESULTS LIST */
+
+.list.shown ol {
+	display: grid;
+	grid-gap: 5px;
+}
+
+.list.shown li {
+	list-style-type: none;
+	background-color: #fff;
+	border-radius: 5px;
+	margin: 2px;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+}
+
+.list-title {
+	font-family: "Amatic SC", sans-serif;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.list-author {
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 0.8rem;
+}
+
+.list-date {
+	font-weight: bold;
+	justify-self: right;
+}
+
+/* DOCUMENTATION LIST */
+
+.intro-list {
+	margin-top: 5px;
+}
+.intro-list ol {
+	display: grid;
+}
+
+.intro-list li {
+	list-style-type: none;
+	background-color: #fff;
+	border-radius: 5px;
+	margin: 2px;
+	padding: 10px;
+}
+
+main p {
+	
+	padding: 10px;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: rgb(240, 240, 240);
+	border-radius: 5px;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	color: black;
+	font-size: 80%;
+	align-items: center;
+	text-align: center;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+/* MISC */
+
+.shown {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
+
+.cards.hidden {
+	display: none;
+}
+
+
+@media screen and (min-width: 692px) {
+	#wrapper {
+		max-width: 700px;
+		margin: auto;
+	}
+
+	nav ul {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	.timeline-cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	main li {
+		transition: all 0.2s ease-in-out;
+	}
+
+	main li:hover {
+		transform: scale(1.05);
+		box-shadow: 2px 2px 5px grey;
+	}
+
+	/* ANIMATIONS */
+
+	nav li {
+		transition: all 0.3s ease-in-out;
+	}
+	nav li:hover {
+		transform: scale(1.1);
+		box-shadow: 2px 2px 5px grey;
+		background-color: white;
+	}
+
+	button {
+		transition: all 0.3s ease-in-out;
+	}
+
+	button:hover {
+		transform: scale(1.05);
+		box-shadow: 2px 2px 5px grey;
+		background-color: white;
+		cursor: pointer;
+	}
+
+
+	.book-card:hover,
+	.timeline-card:hover {
+		animation: pop-out 0.5s cubic-bezier(0,1.23,.71,1.12) forwards;
+	}
+
+	@keyframes pop-out {
+		0% {
+			transform: none;
+			box-shadow: none;
+		}
+		100% {
+			transform: scale(1.07);
+			box-shadow: 2px 2px 5px grey;
+		}
+	}
+
+}
+
